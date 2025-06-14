@@ -1,9 +1,13 @@
+import Footer from "../Footer/Footer";
+
 const Board = () => {
     return (
         <>
-            <div className="bg-green-600 min-h-screen">
-                <h1 className="text-white text-center font-bold text-4xl py-5">To Do Orion 💫</h1>
-                <p className="text-white text-center text-2xl font-semibold">Seguimos trabalhando 🚀</p>
+            <div className="bg-white min-h-screen">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                    <h1 className="text-black font-bold text-2xl sm:text-3xl md:text-4xl">Board</h1>
+                </div>
+                <Footer />
             </div>
         </>
     )
