@@ -1,0 +1,28 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Estudar React",
+      "description": "Revisar os conceitos principais do React e praticar os hooks.",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Comprar leite",
+      "description": "Ir ao mercado comprar leite, pão e ovos.",
+      "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Ler documentação do React",
+      "description": "Ler a documentação oficial do React para entender os conceitos de renderização.",
+      "completed": false
+    },
+    {
+      "id": 4,
+      "title": "Fazer exercício",
+      "description": "Fazer 30 minutos de corrida ou caminhada.",
+      "completed": true
+    }
+  ]
+}
