@@ -1,11 +1,23 @@
-// data/products.js
+// Este arquivo é um módulo JavaScript que exporta uma lista de produtos.
+// Ele serve como um "banco de dados" em memória para os produtos da sua loja.
+// Em uma aplicação real, esses dados viriam de um banco de dados persistente (SQL, NoSQL, etc.).
+
+// Declara uma constante 'products' que é um array (uma lista).
+// Cada elemento deste array é um objeto JavaScript, e cada objeto representa um produto individual.
 const products = [
   {
+    // 'id': Um identificador único para o produto. Essencial para referenciar o produto em outras partes da aplicação (carrinho, pedidos).
     id: 1,
+    // 'name': O nome descritivo do produto.
     name: "Camiseta",
+    // 'price': O preço de venda do produto.
     price: 49.90,
+    // 'description': Uma breve descrição detalhada do produto.
     description: "Camiseta 100% algodão, confortável e estilosa.",
+    // 'category': A categoria à qual o produto pertence. Útil para organização e filtragem.
     category: "Roupas",
+    // 'stock': A quantidade disponível deste produto no inventário.
+    // Este valor será atualizado quando produtos forem adicionados ao carrinho e, principalmente, quando pedidos forem finalizados.
     stock: 150
   },
   {
@@ -82,4 +94,7 @@ const products = [
   }
 ];
 
+// Exporta o array 'products' para que outros arquivos JavaScript possam importá-lo.
+// Por exemplo, em 'products.js', 'cart.js' ou 'checkout.js', você usaria:
+// `let products = require('../data/products');` para acessar esta lista.
 module.exports = products;
